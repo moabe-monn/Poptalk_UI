@@ -16,6 +16,15 @@
   font-family: var(--font-geist-sans);
 }
 
+.page {
+  background-color: #ffffff; /* ← 好きな背景色に変更可能 */
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 80px;
+}
+
+
 @media (prefers-color-scheme: dark) {
   .page {
     --gray-rgb: 255, 255, 255;
@@ -32,6 +41,7 @@
   flex-direction: column;
   gap: 32px;
   grid-row-start: 2;
+  padding: 100px;
 }
 
 .main ol {
