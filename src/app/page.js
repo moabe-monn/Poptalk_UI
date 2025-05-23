@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Header from "../../components/Header";
 
 export default function Home() {
   return (
     <div className={styles.page}>
+      <Header />
       <main className={styles.main}>
         <Image
           className={styles.logo}
@@ -15,7 +17,7 @@ export default function Home() {
         />
         <ol>
           <li>
-            Get started by editing <code>src/app/page.js</code>.
+            自信ないけど
           </li>
           <li>頑張るまん</li>
         </ol>
