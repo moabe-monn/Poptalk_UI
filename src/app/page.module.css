@@ -16,6 +16,19 @@
   font-family: var(--font-geist-sans);
 }
 
+.background {
+  background-image: url('/Poptalk_image.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  width: 1000px;
+  height: 100vh;
+
+  margin: 0 auto; /* 横方向に中央ぞろえ */
+}
+
+
 .page {
   background-color: #ffffff; /* ← 好きな背景色に変更可能 */
   min-height: 100vh;
@@ -39,19 +52,23 @@
 .main {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  grid-row-start: 2;
-  padding: 100px;
+  align-items: center;     /* 横方向に中央配置 */
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
 }
+
 
 .main ol {
   font-family: var(--font-geist-mono);
   padding-left: 0;
+  padding: 300px;
   margin: 0;
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 0.em;
   list-style-position: inside;
+  margin: 0 auto;
 }
 
 .main li:not(:last-of-type) {

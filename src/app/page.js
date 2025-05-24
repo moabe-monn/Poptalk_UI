@@ -1,15 +1,20 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import Header_home from "../../components/Header_home";
+import Square from "../../components/Square";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
+    <div className={`${styles.page } ${styles.background}`}>
       <Header_home />
-      <main className={styles.main}>
+        <Square />
+      <main className={`${styles.main}`}>
         <ol>
-            <p>自分の名前<input type="text" name="username"></input></p>
-            <p>相手の名前<input type="text" name="username"></input></p>
+            <p>Let's talk!</p>
+            <p>自分の名前</p>
+            <p><input type="text" name="username"></input></p>
+            <p>相手の名前</p>
+            <p><input type="text" name="username"></input></p>
             <p>Talk</p>
         </ol>
 

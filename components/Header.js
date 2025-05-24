@@ -14,10 +14,10 @@ const styles = {
   header: {
     backgroundColor: '#FFFFFF',
     padding: '5px',
-	width: '1500px',
-	height: '50px',
+	  width: '1500px',
+	  height: '50px',
     textAlign: 'center',
-	position: 'fixed', 
+	  position: 'fixed', 
     top: 0,
   },
   title: {

@@ -11,21 +11,21 @@ const Header_home = () => {
 
 const styles = {
   header: {
-	background: "url('/poptalk_home.jpg') no-repeat right center / cover",
-    padding: '5px',
+	background: "url('/Poptalk_image.jpg') no-repeat right center / cover",
+    padding: '0px',
 	width: '1000px',
-	height: '400px',
+	height: '0px',
     textAlign: 'center',
   },
   title: {
-    fontSize: '8rem',
+    fontSize: '6rem',
     margin: 0,
-	lineHeight: '300px',
-	color: '#7d7d7d', // ← フォント色を指定
+	lineHeight: '200px',
+	color: '#FFFFFF', // ← フォント色を指定
   },
   sub_title: {
-	color: '#7d7d7d', // ← フォント色を指定
-	fontSize: '4rem',
+	color: '#FFFFFF', // ← フォント色を指定
+	fontSize: '3rem',
     margin: 0,
 	lineHeight: '50px',
   },
