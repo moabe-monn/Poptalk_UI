@@ -9,14 +9,20 @@ export default function Home() {
       <Header_home />
         <Square />
       <main className={`${styles.main}`}>
-        <ol>
-            <p>Let's talk!</p>
-            <p>自分の名前</p>
-            <p><input type="text" name="username"></input></p>
-            <p>相手の名前</p>
-            <p><input type="text" name="username"></input></p>
-            <p>Talk</p>
-        </ol>
+        <div className={styles.formBlock}>
+           <p className={styles.heading}>Let's talk!</p>
+          <div>
+            自分の名前<br />
+            <input type="text" name="username" className={styles.customInput} />
+          </div>
+          <div>
+            相手の名前<br />
+            <input type="text" name="partnername" className={styles.customInput} />
+          </div>
+          <div className={styles.talk}>
+            <ul>Talk</ul>
+          </div>
+        </div>
 
         <div className={styles.ctas}></div>
       </main>
