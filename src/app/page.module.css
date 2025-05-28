@@ -37,7 +37,7 @@ html, body {
   background-repeat: no-repeat;
   background-color: #FFFFFF;
 
-  width: 75vw;             /* 画面の幅の75% */
+  width: 100vw;             /* 画面の幅の75% */
   height: 100vh;
 
   margin: 0 auto;          /* 横中央に配置 */
@@ -98,10 +98,6 @@ html, body {
   margin: auto;
 }
 
-.talk ul {
-  width: 200px;
-  margin: 0 auto;
-}
 
 .customInput {
   width: 300px;         /* 幅を300pxに */
