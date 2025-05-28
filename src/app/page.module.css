@@ -22,13 +22,13 @@ html, body {
   font-family: var(--font-geist-sans);
 }
 
-.formBlock {
+/* .formBlock {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  font-size: 24px;
+  font-size: 30px;
   line-height: 40px;
-}
+} */
 
 .background {
   background-image: url('/Poptalk_image.jpg');
@@ -72,6 +72,7 @@ html, body {
   font-weight: bold;
   margin-bottom: 0px;
   color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .main {
@@ -82,7 +83,10 @@ html, body {
   text-align: center;
   margin: 0 auto;
   color : #FFFFFF;
-  font-weight: bold;
+  font-weight: bold; 
+  font-size: 30px;
+  line-height: 40px;
+  gap: 10px;
 }
 
 .talk {
@@ -96,6 +100,7 @@ html, body {
   font-weight: bold;
   width: 200px;
   margin: auto;
+  margin-top: 60px;
 }
 
 
