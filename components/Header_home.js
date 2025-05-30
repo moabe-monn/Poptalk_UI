@@ -21,10 +21,10 @@ const styles = {
     fontSize: '6rem',
     margin: 0,
     lineHeight: '8px',
-    color: '#FFFFFF', // ← フォント色を指定
+    color:'#F26939', // ← フォント色を指定#F36C21
   },
   sub_title: {
-    color: '#FFFFFF', // ← フォント色を指定
+    color: '#F26939', // ← フォント色を指定#F36C21
     fontSize: '3rem',
     margin: 0,
 	  lineHeight: '50px',

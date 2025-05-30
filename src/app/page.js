@@ -14,27 +14,28 @@ export default function Home() {
 
   return (
     <div className={`${styles.page } ${styles.background}`}>
-      <Header_home />
-        <Square />
-      <main className={`${styles.main}`}>
-          <p className={styles.heading}>Let's talk!</p>
-          {step === 1 && (
-            <>
-              <div>Your Name</div>
-              <input value={username} onChange={(e) => setUsername(e.target.value)} className={styles.customInput}/>
-              <button onClick={() => setStep(2)}  className={styles.talk}>Continue</button>
-            </>
-          )}
+      <div className={`${styles.square}`}>
+        <Header_home />
+        {/* <Square /> */}
+        <main className={`${styles.main}`}>
+            <p className={styles.heading}>Let's talk!</p>
+            {step === 1 && (
+              <>
+                <div>Your Name</div>
+                <input value={username} onChange={(e) => setUsername(e.target.value)} className={styles.customInput}/>
+                <button onClick={() => setStep(2)}  className={styles.talk}>Continue</button>
+              </>
+            )}
 
-          {step === 2 && (
-            <>
-              <div>Parter's Name</div>
-              <input value={partnername} onChange={(e) => setPartnername(e.target.value)} className={styles.customInput}/>
-              <button onClick={() => router.push('/talk')}  className={styles.talk}>Talk</button>
-            </>
-          )}
-      </main>
-      <footer className={styles.footer}></footer>
+            {step === 2 && (
+              <>
+                <div>Parter's Name</div>
+                <input value={partnername} onChange={(e) => setPartnername(e.target.value)} className={styles.customInput}/>
+                <button onClick={() => router.push('/talk')}  className={styles.talk}>Talk</button>
+              </>
+            )}
+        </main>
+      </div>
     </div>
   );
 }
