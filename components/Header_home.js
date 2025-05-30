@@ -1,4 +1,8 @@
 import React from 'react';
+const link = document.createElement('link');
+link.href = 'https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap';
+link.rel = 'stylesheet';
+document.head.appendChild(link);
 
 const Header_home = () => {
   return (
@@ -11,6 +15,7 @@ const Header_home = () => {
 
 const styles = {
   header: {
+    fontFamily: "'Josefin Sans'", //Cherry Bomb One
     padding: '0px',
     width: '100%',            // ← 固定幅をやめる
     maxWidth: '600px',        // ← 背景と揃える

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cherry+Bomb+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
@@ -96,6 +98,7 @@ html, body {
 }
 
 .main {
+  font-family: "Josefin Sans", system-ui;
   display: flex;
   flex-direction: column;
   align-items: center;     /* 横方向に中央配置 */
@@ -111,6 +114,7 @@ html, body {
 
 .talk {
   /* border: 5px solid #F36C21; */
+  font-family: "Josefin Sans", system-ui;
   padding: 10px;
   font-size: 2rem; 
   color :#ffffff;
@@ -130,7 +134,7 @@ html, body {
   font-size: 16px;      /* 文字サイズ */
   color: #333333;       /* 入力テキストの色 */
   background-color: #ffffff; /* 背景色 */
-  border: 2px solid #4C64D3; /* 枠線 */
+  border: 4px solid #4C64D3; /* 枠線 */
   border-radius: 8px;   /* 角丸 */
   padding: 8px;         /* 内側余白 */
 }
