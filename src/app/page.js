@@ -14,7 +14,9 @@ export default function Home() {
 
   return (
     <div className={`${styles.page } ${styles.background}`}>
-      <div className={`${styles.square}`}>
+      <div className={`${styles.square3}`}></div>
+      <div className={`${styles.square2}`}></div>
+      <div className={`${styles.square} `}> 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
         <link href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap" rel="stylesheet" />
