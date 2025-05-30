@@ -1,21 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cherry+Bomb+One&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap');
 
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: white; /* ← 黒い部分を白に */
-}
 
 .page {
-  --gray-rgb: 0, 0, 0;
-  --gray-alpha-200: rgba(var(--gray-rgb), 0.08);
-  --gray-alpha-100: rgba(var(--gray-rgb), 0.05);
-
-  --button-primary-hover: #383838;
-  --button-secondary-hover: #f2f2f2;
-
-  display: grid;
-  grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
   min-height: 100svh;
@@ -31,11 +17,8 @@ html, body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
-
-  width: 100vw;             /* 画面の幅の75% */
-  height: 100vh;
-
-  margin: 0 auto;          /* 横中央に配置 */
+  width: 100vw;            
+  margin: 0 auto;         
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,28 +67,8 @@ html, body {
   justify-content: center;
 }
 
-.page {
-  background-color: #ffffff; /* ← 好きな背景色に変更可能 */
-  min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  padding: 80px;
-}
-
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --gray-rgb: 255, 255, 255;
-    --gray-alpha-200: rgba(var(--gray-rgb), 0.145);
-    --gray-alpha-100: rgba(var(--gray-rgb), 0.06);
-
-    --button-primary-hover: #ccc;
-    --button-secondary-hover: #1a1a1a;
-  }
-}
-
 .heading {
-  font-size: 3rem;   /* 好きな大きさに */
+  font-size: 3rem;  
   font-weight: bold;
   margin-bottom: 0px;
   color :#CF2E92;
@@ -116,8 +79,7 @@ html, body {
   font-family: "Josefin Sans", system-ui;
   display: flex;
   flex-direction: column;
-  align-items: center;     /* 横方向に中央配置 */
-  padding: 10px;
+  align-items: center;     
   text-align: center;
   margin: 0 auto;
   color :#4C64D3;
@@ -127,7 +89,6 @@ html, body {
 }
 
 .talk {
-  /* border: 5px solid #F36C21; */
   font-family: "Josefin Sans", system-ui;
   padding: 10px;
   font-size: 2rem; 
@@ -143,118 +104,17 @@ html, body {
 
 
 .customInput {
-  width: 300px;         /* 幅を300pxに */
-  height: 35px;         /* 高さを40pxに */
-  font-size: 16px;      /* 文字サイズ */
-  color: #333333;       /* 入力テキストの色 */
-  background-color: #ffffff; /* 背景色 */
-  border: 4px solid #4C64D3; /* 枠線 */
-  border-radius: 8px;   /* 角丸 */
-  padding: 8px;         /* 内側余白 */
+  font-family: "Josefin Sans", system-ui;
+  width: 300px;       
+  height: 35px;         
+  font-size: 20px;     
+  color: #333333;      
+  background-color: #ffffff; 
+  border: 4px solid #4C64D3; 
+  border-radius: 8px;  
+  padding: 20px;       
 }
 
-.main li:not(:last-of-type) {
-  margin-bottom: 8px;
-}
 
-.main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
-  padding: 2px 4px;
-  border-radius: 4px;
-  font-weight: 600;
-}
 
-.ctas {
-  display: flex;
-  gap: 16px;
-}
 
-.ctas a {
-  appearance: none;
-  border-radius: 128px;
-  height: 48px;
-  padding: 0 20px;
-  border: none;
-  border: 1px solid transparent;
-  transition:
-    color 0.2s,
-    border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 500;
-}
-
-a.primary {
-  background: var(--foreground);
-  color: var(--background);
-  gap: 8px;
-}
-
-a.secondary {
-  border-color: var(--gray-alpha-200);
-  min-width: 180px;
-}
-
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  a.primary:hover {
-    background: var(--button-primary-hover);
-    border-color: transparent;
-  }
-
-  a.secondary:hover {
-    background: var(--button-secondary-hover);
-    border-color: transparent;
-  }
-
-  .footer a:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-}
-
-@media (max-width: 600px) {
-  .page {
-    padding: 32px;
-    padding-bottom: 80px;
-  }
-
-  .main {
-    align-items: center;
-  }
-
-  .main ol {
-    text-align: center;
-  }
-
-  .ctas {
-    flex-direction: column;
-  }
-
-  .ctas a {
-    font-size: 14px;
-    height: 40px;
-    padding: 0 16px;
-  }
-
-  a.secondary {
-    min-width: auto;
-  }
-
-  .footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  .logo {
-    filter: invert();
-  }
-}
