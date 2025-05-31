@@ -78,8 +78,8 @@
 
 .sendButton {
     position: absolute;
-    right: 40px;
-    top: 75px;
+    right: 50px;
+    top: 70px;
     transform: translateY(-50%);
     background-color: #F26939;
     color: #ffffff;
