@@ -12,14 +12,14 @@ const Header_home = () => {
 const styles = {
   header: {
     fontFamily: "'Josefin Sans'", //Cherry Bomb One
-    padding: '0px',
+    padding: '20px',
     width: '100%',            // ← 固定幅をやめる
     maxWidth: '600px',        // ← 背景と揃える
     height: '150px',
     textAlign: 'center',
   },
   title: {
-    fontSize: '6rem',
+    fontSize: '95px',
     margin: 0,
     lineHeight: '8px',
     color:'#F26939', // ← フォント色を指定#F36C21
