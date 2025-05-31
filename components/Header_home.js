@@ -1,8 +1,4 @@
 import React from 'react';
-const link = document.createElement('link');
-link.href = 'https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap';
-link.rel = 'stylesheet';
-document.head.appendChild(link);
 
 const Header_home = () => {
   return (

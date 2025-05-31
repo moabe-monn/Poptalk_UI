@@ -11,6 +11,21 @@
     font-weight: bold;
 }
 
+.homeButton {
+    position: absolute;
+    left: 25px;
+    top: 35px;
+    transform: translateY(-50%);
+    background-color: #ffffff;
+    color: #F26939;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .headersquare {
   position: absolute;
   top: 0px;
@@ -30,11 +45,46 @@
   box-shadow: 0px 15px 10px 0px rgba(255,221,131, 0.5);
 }
 
+.main {
+    background: rgba(255,221,131, 0.5);
+}
+
+
 .footer {
     position: absolute;
-    top: 75%;
-    /* border-top: 2px solid #FFDD83; */
-    box-shadow: 0px 15px 10px 0px rgba(255,221,131, 0.5);
+    top: 80%;
+    /* border-top: 5px solid #FFDD83; */
+    /* box-shadow: 0px 15px 10px 0px rgba(255,221,131, 0.5); */
     width: 100%;
-    height: 1%;
+    height: 0.5%;
+}
+
+.messageInput {
+  font-family: "M PLUS 1p", sans-serif;
+  width: 800px;
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #F26939;
+  background-color: #ffffff;
+  border: 4px solid #FFDD83;
+  border-radius: 50px;         /* ← px が抜けていたので修正 */
+  padding: 30px;
+  display: block;
+  margin: 40px auto 0 auto;  /* ← 上に100pxの余白を追加しつつ中央に */
+}
+
+.sendButton {
+    position: absolute;
+    right: 40px;
+    top: 75px;
+    transform: translateY(-50%);
+    background-color: #F26939;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 30px;
 }
