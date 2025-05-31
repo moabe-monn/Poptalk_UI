@@ -62,17 +62,18 @@
 .messageInput {
   box-sizing: border-box;
   font-family: "M PLUS 1p", sans-serif;
-  width: 800px;
-  height: 50px;
+  width: 100%;
+  max-width: 800px;
+  height: 70px;
   font-size: 30px;
   font-weight: bold;
   color: #F26939;
   background-color: #ffffff;
   border: 4px solid #FFDD83;
-  border-radius: 50px;         /* ← px が抜けていたので修正 */
-  padding: 30px;
+  border-radius: 50px;
+  padding: 10px 30px;
   display: block;
-  margin: 40px auto 0 auto;  /* ← 上に100pxの余白を追加しつつ中央に */
+  margin: 40px auto 0 auto;
 }
 
 .sendButton {
