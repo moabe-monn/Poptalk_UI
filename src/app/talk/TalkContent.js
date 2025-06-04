@@ -1,6 +1,6 @@
 'use client';
 import { useSearchParams } from 'next/navigation';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Talklog from "../../../components/talklog";
 import styles from "../page.module.css";
@@ -23,7 +23,11 @@ export default function TalkContent() {
 						{` ${partnername}`}
 					</div>
 				</div>
-				<main className={`${talk_style.main}`}></main>
+				<main className={`${talk_style.main}`}>
+					<div className={`${talk_style.scrollbar}`}>
+						a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>
+					</div>
+				</main>
 				<div className={`${talk_style.footer}`}>
 					<input
 						value={message}

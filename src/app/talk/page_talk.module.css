@@ -46,7 +46,19 @@
 }
 
 .main {
-    background: rgba(255,221,131, 0.5);
+    margin-bottom: 40px;
+    width: 100%;
+    background: #ffffff;
+    color: black;
+    height: 65%; /* ビューポート全体に広げたい場合 */
+    right: 1px;
+    /* height: 500px; または必要に応じた固定値 */
+}
+
+.scrollbar {
+    height: 430px; /* ビューポート全体に広げたい場合 */
+    overflow-y: scroll;
+    /* border: 1px solid gray; スクロールエリアを視覚的に確認しやすくする */
 }
 
 
