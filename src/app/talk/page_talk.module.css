@@ -49,8 +49,8 @@
     margin-bottom: 40px;
     width: 100%;
     background: #ffffff;
-    color: black;
-    height: 65%; /* ビューポート全体に広げたい場合 */
+    color: #000000;
+    height: 60%; /* ビューポート全体に広げたい場合 */
     right: 1px;
     /* height: 500px; または必要に応じた固定値 */
 }
