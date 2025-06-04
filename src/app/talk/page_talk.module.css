@@ -56,7 +56,7 @@
 }
 
 .scrollbar {
-    height: 430px; /* ビューポート全体に広げたい場合 */
+    height: 400px; /* ビューポート全体に広げたい場合 */
     overflow-y: scroll;
     /* border: 1px solid gray; スクロールエリアを視覚的に確認しやすくする */
 }
