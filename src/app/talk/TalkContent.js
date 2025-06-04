@@ -25,7 +25,15 @@ export default function TalkContent() {
 				</div>
 				<main className={`${talk_style.main}`}>
 					<div className={`${talk_style.scrollbar}`}>
-						a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>a<br></br>
+						[2025-06-01 01:33:12] Alice: 言語処理系試験えぐい<br></br>
+						[2025-06-01 01:33:20] Alice: 範囲どこ<br></br>
+						[2025-06-01 01:33:33] Bob: 草<br></br>
+						[2025-06-01 01:33:45] Bob: 俺も知らん<br></br>
+						[2025-06-01 01:34:10] Alice: 何してんねん.<br></br>
+						[2025-06-01 01:34:25] Bob: 終わった. <br></br>
+						[2025-06-01 01:35:00] Bob: もう飯行こうぜ<br></br>
+						[2025-06-01 01:35:32] Bob: 流石に<br></br>
+						[2025-06-01 01:35:51] Bob: あり<br></br>
 					</div>
 				</main>
 				<div className={`${talk_style.footer}`}>
