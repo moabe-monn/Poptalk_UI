@@ -56,9 +56,12 @@
 }
 
 .scrollbar {
-    height: 400px; /* ビューポート全体に広げたい場合 */
+    height: 56vh;
     overflow-y: scroll;
-    /* border: 1px solid gray; スクロールエリアを視覚的に確認しやすくする */
+    /* border: 1px solid gray;  */
+    display: flex;
+    flex-direction: column;
+
 }
 
 
@@ -101,4 +104,45 @@
     height: 50px;
     cursor: pointer;
     font-size: 30px;
+    font-weight: bold;
 }
+
+.myMessage {
+  background-color: #FFDD83;
+  padding: 10px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  max-width: 60%;
+  min-width: 50px;
+  align-self: flex-end; /* これで右寄せ */
+  word-wrap: break-word;
+  text-align: center;
+}
+
+
+.partnerMessage {
+  background-color:rgba(255,221,131, 0.4);
+  text-align: center;
+  padding: 10px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  max-width: 60%;
+  min-width: 50px;
+  margin-right: auto;
+}
+
+.myMessagetime {
+  font-size: 0.7rem;
+  color: gray;
+  white-space: nowrap;
+  align-self: flex-end;
+}
+
+.partnerMessagetime{
+  font-size: 0.7rem;
+  color: gray;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+
+

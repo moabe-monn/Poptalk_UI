@@ -9,6 +9,36 @@ export default function Home() {
   const [username, setUsername] = useState('');
   const [partnername, setPartnername] = useState('');
   const router = useRouter();
+  const [usernameError, setUsernameError] = useState('');
+  const [partnerError, setPartnerError] = useState('');
+  const invalidPattern = /[ . \s \/ \* " \/ \\ < > : | ? ¥ ' ` ; , & @ # $ % ^ = ! ~ ]/;
+  const isValid = (value) => value.length > 0 && !invalidPattern.test(value);
+
+  // usernameの入力変更時
+  const handleUsernameChange = (e) => {
+    const v = e.target.value;
+    setUsername(v);
+    if (v.length === 0) {
+      setUsernameError('Input Your name');
+    } else if (invalidPattern.test(v)) {
+      setUsernameError('Invalid characters are used.');
+    } else {
+      setUsernameError('');
+    }
+  };
+
+  // partnernameの入力変更時
+  const handlePartnerChange = (e) => {
+    const v = e.target.value;
+    setPartnername(v);
+    if (v.length === 0) {
+      setPartnerError(`Input partner's name`);
+    } else if (invalidPattern.test(v)) {
+      setPartnerError('Invalid characters are used.');
+    } else {
+      setPartnerError('');
+    }
+  };
 
   return (
     <div className={`${styles.page } ${styles.background}`}>
@@ -24,22 +54,47 @@ export default function Home() {
               {step === 1 && (
                 <>
                   <div>Your Name</div>
-                  <input value={username} onChange={(e) => setUsername(e.target.value)} className={styles.customInput}/>
-                  <button onClick={() => setStep(2)}  className={styles.talk}>Continue</button>
+                  <input
+                    value={username} 
+                    onChange={handleUsernameChange}
+                    className={styles.customInput}
+                  />
+                  {setPartnerError && (
+                    <p style={{ color: 'red', margin: '4px 0' }}>{usernameError}</p>
+                  )}
+                <button
+                  onClick={() => 
+                    setStep(2)}
+                    className={styles.talk}
+                    disabled={!isValid(username)}
+                >
+                Continue
+              </button>
                 </>
               )}
 
-              {step === 2 && (
-                <>
-                  <div>Parter's Name</div>
-                  <input value={partnername} onChange={(e) => setPartnername(e.target.value)} className={styles.customInput}/>
-                  <button onClick={() => router.push(`/talk?partnername=${encodeURIComponent(partnername)}`)}  className={styles.talk}>Talk</button>
-                </>
+            {step === 2 && (
+            <>
+              <div>Partner's Name</div>
+              <input
+                value={partnername}
+                onChange={handlePartnerChange}
+                className={styles.customInput}
+              />
+              {setPartnerError && (
+                <p style={{ color: 'red', margin: '4px 0' }}>{partnerError}</p>
               )}
-          </main>
+              <button
+                onClick={() => router.push(`/talk?username=${encodeURIComponent(username)}&partnername=${encodeURIComponent(partnername)}`)}
+                className={styles.talk}
+                disabled={!isValid(partnername)}
+              >
+                Talk
+              </button>
+            </>
+          )}
+        </main>
       </div>
     </div>
   );
 }
-
-
