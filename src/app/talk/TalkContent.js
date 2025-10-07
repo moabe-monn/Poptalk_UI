@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from "../page.module.css";
 import talk_style from "./page_talk.module.css";
-import  WebSocketChat from '../../../components/WebSocketChat';
+// import  WebSocketChat from '../../../components/WebSocketChat';
 
 export default function TalkContent() {
 	const searchParams = useSearchParams();
